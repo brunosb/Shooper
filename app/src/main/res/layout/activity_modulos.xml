@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.developer.barbosa.shopper.activity.ModulosActivity"
+    android:background="@drawable/background_app"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical|center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="@string/lbl_text_moludos"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <com.developer.barbosa.shopper.custons.GridRadioGroupLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/rgModulos"
+        android:stretchColumns="0,1,2">
+
+        <TableRow android:layout_marginBottom="15dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/modulo1"
+                android:background="@drawable/radiobutton_selected"
+                android:drawableTop="@drawable/responder"
+                android:text="10 pontos"
+                android:button="@null"
+                android:textAlignment="center"
+                android:padding="5dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/modulo2"
+                android:background="@drawable/radiobutton_selected"
+                android:drawableTop="@drawable/responder"
+                android:text="20 pontos"
+                android:button="@null"
+                android:textAlignment="center"
+                android:padding="5dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/modulo3"
+                android:background="@drawable/radiobutton_selected"
+                android:drawableTop="@drawable/modulo_respondido"
+                android:text="30 pontos"
+                android:button="@null"
+                android:textAlignment="center"
+                android:padding="5dp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/modulo4"
+                android:background="@drawable/radiobutton_selected"
+                android:drawableTop="@drawable/lock"
+                android:text="40 pontos"
+                android:button="@null"
+                android:textAlignment="center"
+                android:padding="5dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/modulo5"
+                android:background="@drawable/radiobutton_selected"
+                android:drawableTop="@drawable/lock"
+                android:text="50 pontos"
+                android:button="@null"
+                android:textAlignment="center"
+                android:padding="5dp"/>
+        </TableRow>
+
+    </com.developer.barbosa.shopper.custons.GridRadioGroupLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_btn_modulo"
+        android:id="@+id/btnResponder"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:background="@android:color/background_dark"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+</LinearLayout>

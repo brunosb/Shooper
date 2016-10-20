@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".activity.RegistroCodigoMainActivity"
+    android:orientation="vertical"
+    android:gravity="center_vertical|center_horizontal"
+    android:baselineAligned="false"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_logo"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_weight="0.3" />
+
+    <TextView android:text="@string/lblRegistroCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/txtCodigo"
+        android:inputType="textPostalAddress"
+        android:textAlignment="center"
+        android:textColor="#565656"
+        android:focusable="true"
+        android:textSize="24sp"
+        android:background="#dedede"
+        android:layout_marginBottom="20dp"
+        android:lines="1"
+        android:hint="Insira o código recebido"
+        android:maxLines="1"
+        android:maxLength="8" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_btnVerificar"
+        android:id="@+id/btnVerificar"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:background="@android:color/background_dark"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:nestedScrollingEnabled="false" />
+
+
+</LinearLayout>

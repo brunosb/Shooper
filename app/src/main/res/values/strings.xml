@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Shopper</string>
+    <string name="lblRegistroCodigo">Registro de código</string>
+    <string name="lbl_btnVerificar">Verificar</string>
+    <string name="name_activity_cadastro">Cadastro</string>
+    <string name="name_activity_Menu">Menu</string>
+    <string name="name_activity_Modulos">Modulos</string>
+    <string name="name_activity_Modulos_Perguntas">Perguntas</string>
+    <string name="name_activity_Troca_Pontos">Troca de Pontos</string>
+    <string name="tvNome">Nome:</string>
+    <string name="lbl_btn_Cadastrar">Cadastrar</string>
+    <string name="lbl_btn_menu_responder">Responder Perguntas</string>
+    <string name="lbl_btn_menu_trocar_pontos">Trocar Pontos</string>
+    <string name="lbl_text_moludos">Responda aos módulos e ganhe pontos para a troca em produtos</string>
+    <string name="lbl_btn_modulo">Responder</string>
+    <string name="lbl_btn_perguntas_enviar">Enviar</string>
+</resources>

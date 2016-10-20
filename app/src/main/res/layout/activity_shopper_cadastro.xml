@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.developer.barbosa.shopper.activity.ShopperCadastroActivity"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:text="@string/tvNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:hint="Nome"
+            android:ems="10"
+            android:id="@+id/etNome"
+            android:layout_marginBottom="15dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Endereço:"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:text="Nº:"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:ems="10"
+                android:id="@+id/etEndereco"
+                android:layout_weight="3"
+                android:hint="Endereço"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/etNumeroEndereco"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:hint="Nº"
+                android:layout_gravity="center"
+                android:maxLength="5" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="CEP:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etCep"
+            android:hint="_____-___"
+            android:maxLength="8"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:text="RG:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etRg"
+            android:hint="__________-_"
+            android:maxLength="11"
+            android:layout_marginBottom="15dp"/>
+
+
+
+        <TextView
+            android:text="CPF:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etCpf"
+            android:maxLength="11"
+            android:hint="___.___.___-__"/>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCadastrar"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:background="@android:color/background_dark"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/lbl_btn_Cadastrar"
+            android:onClick="cadastrar"/>
+
+
+    </LinearLayout>
+</ScrollView>
